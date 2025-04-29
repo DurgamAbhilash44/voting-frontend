@@ -36,7 +36,7 @@ const SignupForm = () => {
     }
 
     try {
-      const response = await axios.post(`http://localhost:3000/api/register`, {
+      const response = await axios.post(`${NODE_URL}/api/register`, {
         ...formData,
         age: Number(formData.age)
       });
