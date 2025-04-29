@@ -23,7 +23,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`http://localhost:3000/api/login`, formData);
+      const response = await axios.post(`${NODE_URL}/api/login`, formData);
       const { token, role, totalvoted, totalusers, notvoted, candidates } = response.data;
 
       setSuccess('Login successful!');
