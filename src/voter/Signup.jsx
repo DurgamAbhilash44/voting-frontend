@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const SignupForm = () => {
 
-  const NODE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/';
+  const NODE_URL = import.meta.env.VITE_API_URL;
 
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
